@@ -5,6 +5,13 @@
 #include <iomanip>
 using namespace std;
 
+void funV1() {
+  cout << "You are thinking like me";
+}
+
+void funV2() {
+  cout <<"You are not like me";
+}
 
 int main() {
    
@@ -25,23 +32,37 @@ int main() {
      cout << "Oops, sorry write your age again please: ";
      cin >> yourAge;
    }
-   /* if (yourAge < 15) {
-     cout << "You are too young.";
+
+   if (yourAge < 15) {
+     cout << "You are too young.\n";
    }
-   if (15 <= yourAge <= 25) {
-     cout << "That's very nice age.";
+   if (15 <= yourAge && yourAge <= 25) {
+     cout << "That's very nice age.\n";
    }
    if (25 < yourAge) {
-     cout << "I hope, you live your dream life.";
-   } */
+     cout << "I hope, you live your dream life.\n";
+   } 
 
-   cout << "Now I give you some questions :).\n Let's start.";
+   cout << "Now I give you some questions :).\nLet's start.\n";
 
-   int pointer;
-   int *p= &pointer;
+   long double pointer;
+   long double *p= &pointer;
    cout << "Write some number: ";
    cin >> pointer;
+   cout << "This is memory location of number " << pointer << ": " << p << endl; 
 
+   cout <<"Please, type in some number from 0 - 10\n";
+   int cislo0az10;
+   cin >> cislo0az10;
+   if (cislo010 = 0 || cislo0az10 = 9 || cislo0az10 = 6) {
+     funV1();
+   }
+   
+   else {
+     funV2();
+   } 
+   
+   
    
 
 
@@ -52,6 +73,6 @@ int main() {
 
 
    
-
+  system("pause");
   return 0;
 }

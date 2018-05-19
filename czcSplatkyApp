@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    float num;
+    float sum = 0;
+    cin>> num;
+    cout << setprecision(2) << fixed;
+    
+    for(int x = 0; x<48; x++){
+        num = num * 100.5 / 100;
+        cout << num << endl;
+        sum += num;
+    }
+    cout << endl;
+    cout << sum;
+    return 0;
+}

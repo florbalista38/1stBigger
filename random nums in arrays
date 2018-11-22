@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include<ctime>
+#include<cstdlib>
+#include <algorithm>
+using namespace std;
+int main() {
+
+
+  srand(time(0));
+
+  int dp; 
+  cin >> dp;
+  int pole[dp];
+
+  for(int i = 0; i < 0; i++) {
+    pole[i] = rand();
+    cout << i + 1 << ": " << pole[i] << endl; 
+  }
+
+  int *i = max_element(pole, pole + dp); 
+  int poz = i - pole; 
+  cout << *i << "na pozicii " << poz + 1;
+
+  system("pause");
+  return 0;
+}

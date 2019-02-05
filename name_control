@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+
+int main() {
+
+  int x = 0; 
+  string meno; 
+  string array[5];
+  bool n = true;
+
+  
+  array[0] = "jozef";
+  array[1] = "pavol";
+  array[2] = "jan";
+  array[3] = "amos";
+  array[4] = "kristof";
+
+  cout << "Meno: ";
+  cin >> meno; 
+
+  do {
+  	
+	if(meno != array[x]) {
+		
+		//cout << x << ": Ok\n";
+		x++; 
+		continue;
+		
+	} else {
+		//cout << x << ": Zhoda\n";
+		n = false;
+		x++;
+		continue;
+	} 
+  	
+  } while(x<=4);
+
+ if(n == false) {
+ 	
+ 	cout << "meno je obsadene\n";
+ 	
+ } else {
+ 	
+ 	cout << "meno je volne\n";
+ 	
+ }
+     
+  system("pause");
+  return 0;
+}

@@ -1,0 +1,85 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Node {
+    public:
+        int data; 
+        Node* link;
+};
+
+void after(Node* prev_node, int number) 
+{
+	if(prev_node == NULL) 
+	{
+		cout << "error\n";
+		return;
+	}
+			
+	Node*temp = new Node();
+	temp->data = number;
+	temp->link = prev_node->link;
+	prev_node->link = temp; 
+}
+
+void begin(Node** headRef, int number) 
+{
+    Node* temp = new Node();
+    temp->data = number;
+
+    temp->link = *headRef;
+    *headRef = temp;
+
+}
+
+void append(Node** head_ref, int number)
+{
+	Node* temp = new Node();
+    temp->data = number;
+    temp->link = NULL;
+    
+    if(*head_ref == NULL) {
+    	*head_ref = temp;
+    	return;
+	}
+	
+	Node* temp1 = *head_ref;
+	while(temp1->link != NULL) 
+	{
+		temp1 = temp1->link;
+	}
+	
+	temp1->link = temp;
+}
+
+void printOut(Node* node)
+{
+    while(node != NULL) 
+    {
+        cout << node->data;
+        node = node->link;
+    }
+}
+
+int main() {
+
+    Node* head = NULL;
+	
+	append(&head, 6);  
+      
+    //begin(&head, 7);  
+      
+   
+   // begin(&head, 1);  
+      
+  
+    //append(&head, 4);  
+      
+     
+    after(head->link, 8);  
+      
+    cout<<"Created Linked list is: ";  
+    printOut(head);      
+
+}

@@ -2,3 +2,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<button type="button" class="btn btn-outline-light btn-lg" id="tl" data-toggle="modal" data-target="#myModal2">What will I learn?</button>
+    
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+                    
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">CCNA 2 v7.0</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>The second course in the CCNA curriculum focuses on switching technologies and router operations that support small-to-medium business networks
+                                    and includes wireless local area networks (WLAN) and security concepts. Students learn key switching and routing concepts. 
+                                    They can perform basic network configuration and troubleshooting, identify and mitigate LAN security threats, and configure and secure a basic WLAN.
+                                </p>
+                                <a class="btn btn-dark" href="ccna2.html" role="button">Start learning now!</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>

@@ -34,6 +34,23 @@
 
     <div id="section3" class="">         
 
+
+// CSS
+
+ul.nav-pills.flex-column 
+/* SCROLLSPY - POZÍCIA LISTU NAVIGÁCIE*/
+{
+  top: 20px;
+  position: fixed;
+  margin-top: 50px;
+}
+
+
+div.content-author
+/* ODSADENIE KONTENTU OD NAVIGÁCIE */
+{
+  margin-top: 70px;
+}
     </div>
 
     <div id="section4" class="">         

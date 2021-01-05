@@ -1,0 +1,46 @@
+<!-- $SCROLLSPY - NAVIGÁCIA PRE OBSAH KONTENTU -->
+<nav class="col-3" id="myScrollspy">
+    <ul class="nav nav-pills flex-column">
+    <li class="nav-item">
+        <a class="nav-link active" href="#section1">Advantages</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section2">Optical Fiber</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section3">Fiber-Optic Cable</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section4">Design of cable</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#section5">Fiber vs Copper</a>
+    </li>
+    </ul>
+</nav>
+<!-- SCROLLSPY - NAVIGÁCIA PRE OBSAH KONTENTU$ -->
+
+<!-- $KONTENT, RODZELENÝ DO SEKCIÍ KVÔLI CAROUSELU-->
+<div class="col-9 content-author">
+    <h1 class="text-white display-4">Chapter 3 - Network Protocols and Communications</h1>
+    <h1 class="nadpis-h1-vynimka"">The Rules</h1>
+    <div id="section1" class="text-justify">    
+
+    </div>
+
+    <div id="section2" class=""> 
+
+    </div>        
+
+    <div id="section3" class="">         
+
+    </div>
+
+    <div id="section4" class="">         
+
+    </div>
+
+    <div id="section5" class="">         
+        
+    </div>
+</div>

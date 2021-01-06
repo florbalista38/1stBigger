@@ -1,61 +1,105 @@
 <!-- $SCROLLSPY - NAVIGÁCIA PRE OBSAH KONTENTU -->
-<nav class="col-3" id="myScrollspy">
-    <ul class="nav nav-pills flex-column">
-    <li class="nav-item">
-        <a class="nav-link active" href="#section1">Advantages</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#section2">Optical Fiber</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#section3">Fiber-Optic Cable</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#section4">Design of cable</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#section5">Fiber vs Copper</a>
-    </li>
-    </ul>
-</nav>
-<!-- SCROLLSPY - NAVIGÁCIA PRE OBSAH KONTENTU$ -->
+                <nav class="col-3" id="myScrollspy">
+                    <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">Communication Fundamentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Rule Establishment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Message Formatting and Encapsulation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">Message Size</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section5">Message Timing</a>
+                    </li>
+                    </ul>
+                </nav>
+                <!-- SCROLLSPY - NAVIGÁCIA PRE OBSAH KONTENTU$ -->
+                
+                <!-- $KONTENT, RODZELENÝ DO SEKCIÍ KVÔLI CAROUSELU-->
+                <div class="col-lg-9 col-sm-12 chapter-content">
+                    <h1 class="text-white display-4">Chapter 3 - Network Protocols and Communications</h1>
+                    <h1 class="nadpis-h1-vynimka"">The Rules</h1>
+                    <div id="section1" class="text-justify">    
+                        <h2>Communication Fundamentals</h2>
+                        <p>All communication methods have three elements in common:</p>
+                        <ul>
+                            <li>Source or sender</li>
+                            <li>Destination or receiver</li>
+                            <li>Channel or media</li>
+                        </ul>
+                        <img src="../../images/ccna1/chapter3/pc_comm.jpg" class="img-fluid" style="max-width: 100%; height: auto" alt="Computer Communication">
+                    </div>
 
-<!-- $KONTENT, RODZELENÝ DO SEKCIÍ KVÔLI CAROUSELU-->
-<div class="col-9 content-author">
-    <h1 class="text-white display-4">Chapter 3 - Network Protocols and Communications</h1>
-    <h1 class="nadpis-h1-vynimka"">The Rules</h1>
-    <div id="section1" class="text-justify">    
+                    <div id="section2" class=""> 
+                        <h2>Rule Establishment</h2>
+                        <p>Protocols are necessary for effective communication and include:</p>
+                        <ul>
+                            <li>An identified sender and receiver</li>
+                            <li>Common language and grammar</li>
+                            <li>Speed and timing of delivery</li>
+                            <li>Confirmation or acknowledgment requirements</li>
+                        </ul>
+                        <p>Protocols used in network communications also define:</p>
+                        <ul>
+                            <li>Message encoding</li>
+                            <li>Message delivery options</li>
+                            <li>Message Formatting and Encapsulation</li>
+                            <li>Message Timing</li>
+                            <li>Message Size</li>
+                        </ul>
+                        <img src="../../images/ccna1/chapter3/pieces_of_protocols.jpg" class="img-fluid" style="max-width: 100%; height: auto" alt="Pieces of Protocols">
+                    </div>        
 
-    </div>
+                    <div id="section3" class="">         
+                        <h2>Message Formatting and Encapsulation</h2>
+                        <p>There is an agreed format for letters and addressing letters which is required for proper delivery. <br><br>
 
-    <div id="section2" class=""> 
+                            Putting the letter into the addressed envelope is called encapsulation. <br><br>
+                        
+                            Each computer message is encapsulated in a specific format, called a frame, before it is sent over the network. <br><br>
+                    
+                            A frame acts like an envelope providing destination address and source address.
+                        </p>
+                        <img src="../../images/ccna1/chapter3/encaps.jpg" class="img-fluid" style="max-width: 100%; height: auto" alt="Encapsulation of message">
+                    </div>
 
-    </div>        
+                    <div id="section4" class="">         
+                        <h2>Message Size</h2>
+                        <p>Humans break long messages into smaller parts or sentences. <br><br>
 
-    <div id="section3" class="">         
+                        Long messages must also be broken into smaller pieces to travel across a network.
+                        </p>
+                        <ul>
+                        <li>Each piece is sent in a separate frame.</li>
+                        <li>Each frame has its own addressing information.</li>
+                        <li>A receiving host will reconstruct multiple frames into the original message.</li>
+                        </ul>
+                        <img src="../../images/ccna1/chapter3/message_size.jpg" class="img-fluid" style="max-width: 100%; height: auto" alt="Message size">
+                    </div>
 
+                    <div id="section5" class="">         
+                        <h2>Message Timing</h2>
+                        <h4>Access Method</h4>
+                        <p>Hosts on a network need to know when to begin sending messages and how to respond when collisions occur.</p>
+                        <h4>Flow Control</h4>
+                        <p>Source and destination hosts use flow control to negotiate correct timing to avoid overwhelming the destination and ensure information is received.</p>
+                        <h4>Response Timeout</h4>
+                        <p>Hosts on the network have rules that specify how long to wait for responses and what action to take if a response timeout occurs.</p>
+                        <div class="view">
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="../../images/ccna1/chapter3/mess_timing.mp4" type="video/mp4" alt="Message Timing video"/>
+                            </video>
+                        </div>
+                    </div>
 
-// CSS
-
-ul.nav-pills.flex-column 
-/* SCROLLSPY - POZÍCIA LISTU NAVIGÁCIE*/
-{
-  top: 20px;
-  position: fixed;
-  margin-top: 50px;
-}
-
-
-div.content-author
-/* ODSADENIE KONTENTU OD NAVIGÁCIE */
-{
-  margin-top: 70px;
-}
-
-
-
-// SCRIPTS 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <div id="section6" class="">         
+                        <h2>Message Delivery Options</h2>
+                        <img src="../../images/ccna1/chapter3/u_b_m.png" class="img-fluid" style="max-width: 100%; height: auto" alt="Unicast, broadcast, multicast">
+                    </div>
+                </div>
+                <!-- KONTENT, RODZELENÝ DO SEKCIÍ KVÔLI CAROUSELU$ -->

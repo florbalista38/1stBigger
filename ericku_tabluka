@@ -1,0 +1,41 @@
+<table class="table table-dark">
+                            <thead>
+                                <tr class="color1">
+                                    <th>Implementation Issues</th>
+                                    <th>UTP Cabling</th>
+                                    <th>Fiber-optic Cabling</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="color2">
+                                    <td>Bandwidth supported</td>
+                                    <td>10 Mb/s - 10 Gb/s</td>
+                                    <td>10 Mb/s - 100 Gb/s</td>
+                                </tr>
+                                <tr class="color1">
+                                    <td>Distance</td>
+                                    <td>Short (1 - 100 m)</td>
+                                    <td>High (1 - 100 000 m)</td>
+                                </tr>
+                                <tr class="color2">
+                                    <td>Immunity to EMI and RFI</td>
+                                    <td>Low</td>
+                                    <td>Completely immune</td>
+                                </tr>
+                                <tr class="color1">
+                                    <td>Media and connector cost</td>
+                                    <td>Lowest</td>
+                                    <td>Highest</td>
+                                </tr>
+                                <tr class="color2">
+                                    <td>Installation skills required</td>
+                                    <td>Lowest</td>
+                                    <td>Highest</td>
+                                </tr>
+                                <tr class="color1">
+                                    <td>Safety precautions</td>
+                                    <td>Lowest</td>
+                                    <td>Highest</td>
+                                </tr>
+                            </tbody>
+                        </table>
